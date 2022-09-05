@@ -22,10 +22,19 @@ img {
     margin: auto;
 }
 
+.container.fluid{
+    width: 100%;
+    background-color: red;
+}
+
 header {
     background-color: var(--bg-header);
     height: 80px;
     padding: 15px 0;
+}
+
+main{
+    background-color: var(--bg-main);
 }
 
 .row {
@@ -56,18 +65,34 @@ header {
 }
 /* #endregion col- */
 
+
+/* #region header */
 .col-2.logo{
     text-align: left;
     padding-left: 10px;
 }
 
-.row.col-5{
+.row.menu{
     margin: auto;
     justify-content: space-between;
 }
-
 
 .col-2.login{
     text-align: right;
     padding-right: 10px;
 }
+/* #endregion header */
+
+/* #region main */
+
+.container.background{
+    background-color: var(--bg-main);
+    height: 500px;
+    padding-top: 50px;
+}
+
+.container.description{
+    background-color: var(--bg-mainlite);
+    height: 400px;
+}
+
